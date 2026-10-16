@@ -6,18 +6,77 @@ body {
   background: #f6f7fb;
   color: #1f2937;
 }
-a.button {
-  display: block;
+.icon {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+}
+.label {
+  flex: 1;
+  word-break: break-all;
+}
+
+/* 画面遷移（フォルダ） */
+a.folder {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: white;
+  color: #1f2937;
+  text-decoration: none;
+  padding: 16px;
+  margin: 12px 0;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  transition: background 0.15s, border-color 0.15s;
+}
+a.folder .icon {
+  color: #f59e0b;
+}
+a.folder .chevron {
+  color: #9ca3af;
+  font-size: 20px;
+  transition: transform 0.15s;
+}
+a.folder:hover {
+  background: #fffbeb;
+  border-color: #f59e0b;
+}
+a.folder:hover .chevron {
+  transform: translateX(4px);
+}
+
+/* ダウンロード */
+a.download {
+  display: flex;
+  align-items: center;
+  gap: 14px;
   background: #2563eb;
   color: white;
   text-decoration: none;
   padding: 16px;
-  margin: 16px 0;
+  margin: 12px 0;
   border-radius: 8px;
-  text-align: center;
+  transition: background 0.15s;
 }
-a.button:hover {
+a.download .ext {
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.2);
+}
+a.download:hover {
   background: #1d4ed8;
+}
+
+/* パンくず */
+.breadcrumb {
+  font-size: 14px;
+  color: #6b7280;
+}
+.breadcrumb a {
+  color: #2563eb;
+  text-decoration: none;
 }
 .back {
   display: inline-block;

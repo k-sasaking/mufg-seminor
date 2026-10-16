@@ -1,0 +1,26 @@
+body {
+  font-family: sans-serif;
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 20px;
+  background: #f6f7fb;
+  color: #1f2937;
+}
+a.button {
+  display: block;
+  background: #2563eb;
+  color: white;
+  text-decoration: none;
+  padding: 16px;
+  margin: 16px 0;
+  border-radius: 8px;
+  text-align: center;
+}
+a.button:hover {
+  background: #1d4ed8;
+}
+.back {
+  display: inline-block;
+  margin-top: 24px;
+  color: #2563eb;
+}
